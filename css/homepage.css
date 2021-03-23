@@ -1,0 +1,79 @@
+/* Banner */
+
+#banner {
+  background-color: #f9f7f4;
+  color: black;
+  align-items: center;
+  display: flex;
+  padding: 6em 0 2em 0;
+  position: relative;
+  height: 75vh;
+  min-height: 15em;
+  max-height: 28em;
+  padding: 0 10em;
+}
+
+#banner h1 {
+  font-size: 2.5em;
+  color: black;
+}
+
+.banner-text p {
+  font-size: 0.9em;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+.banner-content {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1280px) {
+  #banner {
+    background-attachment: scroll;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #banner {
+    padding: 8em 0 1em 0;
+    height: auto;
+    margin-bottom: -2.75em;
+    max-height: none;
+    min-height: 0;
+    top: -2.75em;
+  }
+
+  #banner h1 {
+    font-size: 2em;
+  }
+  .banner-text {
+    display: block;
+  }
+
+  .banner-text > * {
+    margin-right: 0;
+    margin-bottom: 2em;
+  }
+
+  #banner {
+    height: auto;
+    min-height: 0;
+    max-height: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #banner {
+    padding: 6em 0 2em 0;
+  }
+
+  .banner-banner-text .banner-text p br {
+    display: none;
+  }
+
+  #banner {
+    padding: 8em 0 4em 0;
+  }
+}
