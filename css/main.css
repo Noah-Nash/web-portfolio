@@ -207,6 +207,33 @@ h6 {
   letter-spacing: 0.5rem;
 }
 
+
+/*For mobile*/
+.menu-icon {
+  display: none !important;    
+}
+
+@media screen and (max-width: 600px) {
+  .links {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
 @media screen and (max-width: 1680px) {
 }
 
@@ -258,3 +285,5 @@ footer {
 footer p {
   margin: 0;
 }
+
+

@@ -89,6 +89,10 @@ footer {
   margin-top: 120px;
 }
 
+.contact > p {
+  color:#ec778d;
+}
+
 form {
   margin-top: 2em;
   padding: 1em;
