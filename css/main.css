@@ -172,7 +172,7 @@ h6 {
 #header {
   display: flex;
   justify-content: space-between;
-  background-color: white;
+  background-color: rgba(255,255,255, 0.92);
   color: darkslategrey;
   box-shadow: 0 0 0.35em 5px rgba(0, 0, 0, 0.25);
   font-weight: 900;

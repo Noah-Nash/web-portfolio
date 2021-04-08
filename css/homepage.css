@@ -27,6 +27,8 @@
 
 .banner-content {
   margin-left: 20px;
+  border-top:3px solid grey;
+  border-bottom: 3px solid grey;
 }
 
 @media screen and (max-width: 1280px) {
