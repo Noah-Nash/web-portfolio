@@ -38,6 +38,11 @@ body {
   background-color: #464751;
 }
 
+hr {
+  border: 1px solid grey;
+  margin: 2em 0em;
+}
+
 /* typography */
 
 body {
