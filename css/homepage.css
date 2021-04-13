@@ -15,7 +15,7 @@
 
 #banner h1 {
   font-size: 2.5em;
-  color: black;
+  color: #d1d9e1;
 }
 
 .banner-text p {
@@ -23,11 +23,12 @@
   font-weight: 600;
   letter-spacing: 0.25em;
   text-transform: uppercase;
+  color: #d1d9e1;
 }
 
 .banner-content {
   margin-left: 20px;
-  border-top:3px solid grey;
+  border-top: 3px solid grey;
   border-bottom: 3px solid grey;
 }
 
@@ -78,4 +79,40 @@
   #banner {
     padding: 8em 0 4em 0;
   }
+}
+
+/* Main */
+
+#main {
+  background-color: #eaeaea;
+  min-height: 500px;
+  color: black;
+}
+
+.card-container {
+  padding-top: 100px;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 12px;
+  max-width: 70%;
+  margin: auto;
+  min-height: 250px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px, rgba(0, 0, 0, 0.07) 3px 8px 28px;
+}
+
+.card {
+  max-width: 250px;
+  padding: 10px;
+  position: relative;
+  top: 0;
+  transition: top 0.3s ease;
+}
+
+.card:hover {
+  top: -10px;
 }

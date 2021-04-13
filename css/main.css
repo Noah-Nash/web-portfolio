@@ -172,8 +172,8 @@ h6 {
 #header {
   display: flex;
   justify-content: space-between;
-  background-color: rgba(255,255,255, 0.92);
-  color: #56866D;
+  background-color: rgba(255, 255, 255, 0.92);
+  color: #56866d;
   box-shadow: 0 0 0.35em 5px rgba(0, 0, 0, 0.25);
   font-weight: 900;
   height: 2.5em;
@@ -205,33 +205,61 @@ h6 {
   font-family: "Pacifico", cursive;
   text-transform: none;
   letter-spacing: 0.5rem;
+  color: #56866d;
 }
 
+.nav-name:link {
+  text-decoration: none;
+  color: #56866d;
+}
+
+.nav-name:visited {
+  text-decoration: none;
+  color: #56866d;
+}
+
+.nav-name:hover {
+  text-decoration: none;
+  color: #56866d;
+}
+
+.nav-name:active {
+  text-decoration: none;
+  color: #56866d;
+}
+
+#header > a,
+.links > li > a {
+  border-bottom: none;
+}
 
 /*For mobile*/
 .menu-icon {
-  display: none !important;    
+  display: none !important;
 }
 
 @media screen and (max-width: 600px) {
-  .links {
+  .links li {
     display: none;
   }
-  .topnav a.icon {
+  .links .menu-icon {
     float: right;
+    display: block !important;
+    font-size: 1em !important;
+  }
+  .nav-responsive {
+    position: relative;
     display: block;
   }
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
+  .nav-responsive a.menu-icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  .topnav.responsive a {
+  .nav-responsive li {
     float: none;
     display: block;
     text-align: left;
-/*    Change Topnav name*/
   }
 }
 
@@ -286,5 +314,3 @@ footer {
 footer p {
   margin: 0;
 }
-
-
