@@ -91,6 +91,7 @@
 
 .card-container {
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .card-wrapper {
@@ -106,7 +107,7 @@
 }
 
 .card {
-  max-width: 250px;
+  max-width: 300px;
   padding: 10px;
   position: relative;
   top: 0;
@@ -115,4 +116,23 @@
 
 .card:hover {
   top: -10px;
+}
+
+@media screen and (max-width: 750px) {
+  .card-wrapper {
+    max-width: 90%;
+}
+
+@media screen and (max-width: 480px) {
+  .card-wrapper {
+    display: block;
+    max-width:100%;
+    text-align: center;
+    
+  }
+    .card {
+      margin: auto;
+      border-bottom: 1px solid grey;
+      max-width: 100%;
+  }
 }
