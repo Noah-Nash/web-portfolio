@@ -54,11 +54,15 @@ footer {
   margin: 0.5em;
   box-shadow: 0px 0px 16px -4px #a39a87;
   border-radius: 10px;
+    position: relative;
+  top: 0;
+  transition: top 0.4s ease;
+  min-height: 210px;
+  cursor: pointer;
 }
 
 .column:hover {
-  transform: translate3D(0, -1px, 0) scale(1.04);
-  transition: all 0.25s ease-in-out;
+  top: -10px;
 }
 
 .column-image {
@@ -72,8 +76,7 @@ footer {
 .column-text {
   background-color: lightgrey;
   margin: 3px;
-  min-height: 150px;
-  max-height: 200px;
+  height: 170px;
   font-size: 0.9em;
   color: grey;
   border-radius: 5px;
