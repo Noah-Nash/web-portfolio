@@ -162,13 +162,23 @@
 @media screen and (max-width: 480px) {
   .card-wrapper {
     display: block;
-    max-width:100%;
+    max-width:98%;
     text-align: center;
     
   }
     .card {
       margin: auto;
       border-bottom: 1px solid grey;
-      max-width: 100%;
+      max-width: 98%;
   }
+  
+  .card > p {
+  max-width: none;
+}
+  
+  .banner-content {
+  max-width: 95%;
+  margin: auto;
+}
+
 }
