@@ -13,7 +13,10 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/tiles.css" />
     <link rel="stylesheet" href="css/homepage.css" />
-    
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
   </head>
   <body>
     <!-- Header -->
@@ -27,6 +30,11 @@
           <li><a href="blog.html">blog</a></li>
         </ul>
       </nav>
+      <button id="theme-toggle" class="button-theme-icon" type="button">
+        <span class="theme-icon-dark icon-none"><img src="images/sun.png" alt="theme switcher" id="theme-toggle">
+        </span>
+        <span class="theme-icon-light icon-none"><img src="images/moon.png" alt="theme switcher" id="theme-toggle"></span>
+      </button>
     </header>
     <!-- Wrapper -->
     <div class="all-content-wrapper">
@@ -46,23 +54,27 @@
       <main id="main">
         <div class="card-container">
           <div class="card-wrapper">
+            <a href="about.html">
             <div class="card">
               <h2>About Me </h2>
               <p>Learn more about me, view my earned certifications, or view my resume </p>
                 <a href="about.html">learn more</a>
             </div>
-
+            </a>
+            <a href="about.html#contact.html">
               <div class="card">
               <h2>Contact</h2>
               <p>I am available through contact by email or special request </p>
                 <a href="about.html#contact">learn more</a>
               </div>
-
+              </a>
+              <a href="blog.html">
               <div class="card">
               <h2>Blog</h2>
               <p>Vist to view my ongoing and current blog posts</p>
               <a href="blog.html">learn more</a>
               </div>
+              </a>
           </div>
         </div>
       </div>
@@ -78,11 +90,11 @@
           ><span class="label">Instagram</span></a
         >
 
-        <a href="#" class="icon brands alt fa-github"
+        <a href="https://github.com/Noah-Nash" class="icon brands alt fa-github"
           ><span class="label">GitHub</span></a
         >
 
-        <a href="#" class="icon brands alt fa-linkedin-in"
+        <a href="https://www.linkedin.com/in/noah-nash/" class="icon brands alt fa-linkedin-in"
           ><span class="label">LinkedIn</span></a
         >
         <a
@@ -94,5 +106,6 @@
       <br />
       <p>&copy; 2021 ~ Noah Nash</p>
     </footer>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

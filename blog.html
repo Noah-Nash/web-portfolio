@@ -11,66 +11,83 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/blog.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
   </head>
   <body>
     <!-- Header -->
     <header id="header">
       <a class="nav-name" href="index.html">Noah Nash</a>
-      <nav id="menu">
+      <nav class="nav" id="menu">
         <ul class="links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="about.html#contact">Contact</a></li>
-          <li><a href="#">blog</a></li>
+          <li><a href="blog.html">blog</a></li>
+          <a
+            href="javascript:void(0);"
+            class="menu-icon"
+            onclick="menuFunction()"
+          >
+            <i class="fa fa-bars"></i>
+          </a>
         </ul>
       </nav>
+      <button id="theme-toggle" class="button-theme-icon" type="button">
+        <span class="theme-icon-dark icon-none"
+          ><img src="images/sun.png" alt="theme switcher" id="theme-toggle" />
+        </span>
+        <span class="theme-icon-light icon-none"
+          ><img src="images/moon.png" alt="theme switcher" id="theme-toggle"
+        /></span>
+      </button>
     </header>
     <!-- Wrapper -->
     <div class="all-content-wrapper">
       <h1>Blog</h1>
       <div id="main" class="alt">
         <article class="blog-preview">
-          <a href="#" style="padding-top: 6em">
-            <h3>Blog</h3>
-            <p>31 DECEMBER 20XX</p>
+          <a href="#" class="blog-hyperlink-container">
+            <h3>Hello World!</h3>
+            <p>13 May 2021</p>
+
+            <img
+              src="images/temp-banner.jpg"
+              alt="placeholder image"
+              class="blog-image"
+            />
           </a>
           <p class="blog-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-            sed aut quidem dolorem quasi ex, amet nisi id sunt cupiditate
-            consequuntur repellendus fuga doloremque aliquid neque
-            necessitatibus culpa, incidunt mollitia.
+            This an example of my first blog post. Stay tuned for more
+            information!
           </p>
-          <a href="#">Read more</a>
-        </article>
-        <article class="blog-preview">
-          <a href="#" style="padding-top: 6em">
-            <h3>Blog</h3>
-            <p>31 DECEMBER 20XX</p>
-          </a>
-          <p class="blog-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-            sed aut quidem dolorem quasi ex, amet nisi id sunt cupiditate
-            consequuntur repellendus fuga doloremque aliquid neque
-            necessitatibus culpa, incidunt mollitia.
-          </p>
-          <a href="#">Read more</a>
-        </article>
-        <article class="blog-preview">
-          <a href="#" style="padding-top: 6em">
-            <h3>Blog</h3>
-            <p>31 DECEMBER 20XX</p>
-          </a>
-          <p class="blog-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-            sed aut quidem dolorem quasi ex, amet nisi id sunt cupiditate
-            consequuntur repellendus fuga doloremque aliquid neque
-            necessitatibus culpa, incidunt mollitia.
-          </p>
-          <a href="#">Read more</a>
+          <a href="blog/blog.html">Read more</a>
         </article>
       </div>
     </div>
+
     <!-- Footer -->
     <footer id="footer">
       <div class="icons">
@@ -97,7 +114,8 @@
         >
       </div>
       <br />
-      <p>&copy; 2021 | Noah Nash | All Rights Reserved</p>
+      <p>&copy; 2021 ~ Noah Nash</p>
     </footer>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

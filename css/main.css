@@ -43,10 +43,55 @@ hr {
   margin: 2.5em 0em;
 }
 
+/* Dark theme switch */
+#theme-toggle {
+  position: absolute;
+  right: 7px;
+  height: 26px;
+  width: auto;
+}
+.icon-none {
+  display: none;
+}
+
+[data-theme="light"] .theme-icon-light,
+[data-theme="dark"] .theme-icon-dark {
+  display: block !important;
+}
+
+:root {
+  --background-color0: #eaeaea;
+  --background-color1: white;
+  --heading-color: #f599aa;
+  --text-color: #333333;
+  --header-color: rgba(255, 255, 255, 0.92);
+  --header-txt-color: #56866d;
+  /* Main Page */
+  --typing-txt-color: #41ff00;
+  /* About page */
+  --column-color: lightgrey;
+  --column-txt-bg: whitesmoke;
+  --column-txt: grey;
+}
+html[data-theme="dark"] {
+  --background-color0: #151a1d;
+  --background-color1: #3e4553;
+  --heading-color: #f599aa;
+  --text-color: #dddddd;
+  --header-color: rgba(42, 42, 42, 0.92);
+  --header-txt-color: #1aae61;
+  /* Main Page */
+  --typing-txt-color: #ffb000;
+  /* About CSS */
+  --column-color: #32323b;
+  --column-txt-bg: #504c4c;
+  --column-txt: #c7c9d4;
+}
+
 /* typography */
 
 body {
-  color: #ffffff;
+  color: var(--text-color);
   font-family: Inter, X-LocaleSpecific, sans-serif;
   font-size: 12pt;
   font-weight: 300;
@@ -101,7 +146,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #f599aa;
+  color: var(--heading-color);
   font-weight: 600;
   margin: 0 0 1em 0;
 }
@@ -172,8 +217,8 @@ h6 {
 #header {
   display: flex;
   justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.92);
-  color: #56866d;
+  background-color: var(--header-color);
+  color: var(--header-txt-color);
   box-shadow: 0 0 0.35em 5px rgba(0, 0, 0, 0.25);
   font-weight: 900;
   height: 2.5em;
@@ -184,6 +229,7 @@ h6 {
   width: 100%;
   z-index: 10;
   padding: 0 8em;
+  height: 56px;
 }
 
 #header nav a {
@@ -205,27 +251,27 @@ h6 {
   font-family: "Pacifico", cursive;
   text-transform: none;
   letter-spacing: 0.5rem;
-  color: #56866d;
+  color: var(--header-txt-color);
 }
 
 .nav-name:link {
   text-decoration: none;
-  color: #56866d;
+  color: var(--header-txt-color);
 }
 
 .nav-name:visited {
   text-decoration: none;
-  color: #56866d;
+  color: var(--header-txt-color);
 }
 
 .nav-name:hover {
   text-decoration: none;
-  color: #56866d;
+  color: var(--header-txt-color);
 }
 
 .nav-name:active {
   text-decoration: none;
-  color: #56866d;
+  color: var(--header-txt-color);
 }
 
 #header > a,
@@ -270,6 +316,9 @@ h6 {
   #header {
     padding: 0;
   }
+  nav {
+    margin-right: 55px;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -307,7 +356,7 @@ footer {
   border-top: 1px solid ga;
   padding: 1.5em 0 0 0.5em;
   background-color: #2d2e4f;
-  color: #f599aa;
+  color: var(--heading-color);
   width: 100vw;
 }
 

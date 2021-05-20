@@ -15,8 +15,8 @@
 
 #banner h1 {
   font-size: 2.5em;
-  color: #41FF00;
-  margin: .9em 0;
+  color: var(--typing-txt-color);
+  margin: 0.9em 0;
   height: 1.5em;
   background-color: black;
 }
@@ -35,12 +35,11 @@
   border-bottom: 3px solid grey;
 }
 
-
 /*Typing animation*/
 
 .typing-animation {
   width: 9.4em;
-  animation: typing 1.3s steps(22), blink .7s step-end infinite alternate;
+  animation: typing 1.3s steps(22), blink 0.7s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
@@ -50,17 +49,15 @@
 
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
 }
-    
+
 @keyframes blink {
   50% {
-    border-color: transparent
+    border-color: transparent;
   }
 }
-
-
 
 @media screen and (max-width: 1280px) {
   #banner {
@@ -114,9 +111,9 @@
 /* Main */
 
 #main {
-  background-color: #eaeaea;
+  background-color: var(--background-color0);
   min-height: 500px;
-  color: black;
+  color: var(--text-color);
 }
 
 .card-container {
@@ -128,7 +125,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: var(--background-color1);
   border-radius: 12px;
   max-width: 70%;
   margin: auto;
@@ -146,6 +143,10 @@
   margin: 0 1.1em;
 }
 
+.card > a:hover {
+  color: inherit;
+}
+
 .card > p {
   max-width: 250px;
 }
@@ -157,28 +158,27 @@
 @media screen and (max-width: 750px) {
   .card-wrapper {
     max-width: 90%;
-}
-
-@media screen and (max-width: 480px) {
-  .card-wrapper {
-    display: block;
-    max-width:98%;
-    text-align: center;
-    
   }
+
+  @media screen and (max-width: 480px) {
+    .card-wrapper {
+      display: block;
+      max-width: 98%;
+      text-align: center;
+    }
     .card {
       margin: auto;
       border-bottom: 1px solid grey;
       max-width: 98%;
-  }
-  
-  .card > p {
-  max-width: none;
-}
-  
-  .banner-content {
-  max-width: 95%;
-  margin: auto;
-}
+    }
 
+    .card > p {
+      max-width: none;
+    }
+
+    .banner-content {
+      max-width: 95%;
+      margin: auto;
+    }
+  }
 }
