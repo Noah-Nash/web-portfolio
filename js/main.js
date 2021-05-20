@@ -1,3 +1,4 @@
+//Menu function
 function menuFunction() {
   var x = document.getElementById("menu");
   if (x.className === "nav") {
@@ -7,6 +8,7 @@ function menuFunction() {
   }
 }
 
+//Dark Theme Toggle
 var toggle = document.getElementById("theme-toggle");
 
 var storedTheme =
