@@ -1,0 +1,27 @@
+/*Blog */
+
+.blog-preview {
+  max-width: 750px;
+  margin: auto;
+  margin-bottom: 2em;
+}
+
+.blog-image {
+  width: 20vw;
+  height: auto;
+}
+.blog-text {
+  color: grey;
+}
+
+h1 {
+  color: pink;
+  border-left: 0.3em solid pink;
+  padding-left: 0.5em;
+  margin-left: 2em;
+}
+
+.blog-hyperlink-container {
+  padding-top: 6em;
+  border-bottom: none;
+}
