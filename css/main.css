@@ -72,6 +72,7 @@ hr {
   --column-color: lightgrey;
   --column-txt-bg: whitesmoke;
   --column-txt: grey;
+  --icon-color: white;
 }
 html[data-theme="dark"] {
   --background-color0: #151a1d;
@@ -86,6 +87,7 @@ html[data-theme="dark"] {
   --column-color: #32323b;
   --column-txt-bg: #504c4c;
   --column-txt: #c7c9d4;
+  --icon-color: antiquewhite;
 }
 
 /* typography */
@@ -362,4 +364,9 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+.footer-social-icon {
+  width: 1em;
+  fill: var(--icon-color);
 }
