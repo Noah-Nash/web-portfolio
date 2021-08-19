@@ -151,7 +151,7 @@
   max-width: 250px;
 }
 
-.card:hover {
+.card:hover .card-content {
   top: -10px;
 }
 
@@ -181,4 +181,10 @@
       margin: auto;
     }
   }
+}
+
+.card-content {
+  position: relative;
+  top: 0;
+  transition: top 0.3s ease;
 }
