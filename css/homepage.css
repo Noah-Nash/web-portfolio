@@ -186,10 +186,14 @@
 }
 .card-content-wrapper {
   height: 200px;
-  
+
 }
 .card-content {
   position: relative;
   top: 0;
   transition: top 0.3s ease;
+}
+
+.card-content:hover {
+  color: var(--text-color);
 }
