@@ -74,6 +74,7 @@ hr {
   --column-txt: grey;
   --box-shadow-color: #a39a87;
   --icon-color: white;
+  --footer-background-color: #3f406f;
 }
 html[data-theme="dark"] {
   --background-color0: #151a1d;
@@ -90,6 +91,7 @@ html[data-theme="dark"] {
   --column-txt: #c7c9d4;
   --box-shadow-color: transparent;
   --icon-color: antiquewhite;
+  --footer-background-color: #2d2e4f;
 }
 
 /* typography */
@@ -359,7 +361,7 @@ h6 {
 footer {
   border-top: 1px solid ga;
   padding: 1.5em 0 0 0.5em;
-  background-color: #2d2e4f;
+  background-color: var(--footer-background-color);
   color: var(--heading-color);
   width: 100vw;
 }
