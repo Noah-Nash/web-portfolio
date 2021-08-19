@@ -141,6 +141,8 @@
   top: 0;
   transition: top 0.3s ease;
   margin: 0 1.1em;
+  display: flex;
+  flex-direction: column;
 }
 
 .card > a:hover {
@@ -151,7 +153,7 @@
   max-width: 250px;
 }
 
-.card:hover {
+.card:hover .card-content {
   top: -10px;
 }
 
@@ -181,4 +183,17 @@
       margin: auto;
     }
   }
+}
+.card-content-wrapper {
+  height: 200px;
+
+}
+.card-content {
+  position: relative;
+  top: 0;
+  transition: top 0.3s ease;
+}
+
+.card-content:hover {
+  color: var(--text-color);
 }
