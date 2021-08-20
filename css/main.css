@@ -285,12 +285,12 @@ h6 {
   border-bottom: none;
 }
 
-/*For mobile*/
+/* For mobile
 .menu-icon {
   display: none !important;
-}
+} */
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .links li {
     display: none;
   }
@@ -313,6 +313,43 @@ h6 {
     display: block;
     text-align: left;
   }
+} */
+
+@media screen and (max-width: 600px) {
+  #header {
+    flex-direction:column;
+    justify-content: flex-start;
+    position: initial;
+    height: auto;
+    border-bottom: 1px solid grey;
+  }
+  .nav-name {
+    margin: 0px auto;
+  }
+  #menu {
+    line-height: normal;
+    margin: 0px auto;
+    font-size: 1.2em;
+  }
+  .links {
+    padding: .5em;
+    margin-bottom: 1em;
+  }
+  .button-theme-icon {
+    height: 29px;
+    top:1px;
+  }
+
+
+/* Fix this in the 750px media query */
+  #header nav a {
+    padding: 0 1.3em !important;
+  }
+
+  #banner {
+    top: 0px !important;
+  }
+  
 }
 
 @media screen and (max-width: 1680px) {
@@ -329,7 +366,8 @@ h6 {
 
 @media screen and (max-width: 750px) {
   #header {
-    height: 2.75em;
+    /* height: 2.75em; */
+    /* height: auto; */
     line-height: 2.75em;
     padding: 0;
   }
