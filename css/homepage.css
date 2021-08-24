@@ -38,7 +38,7 @@
 /*Typing animation*/
 
 .typing-animation {
-  width: 9.4em;
+  width: 17ch;
   animation: typing 1.3s steps(22), blink 0.7s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
@@ -64,7 +64,6 @@
     background-attachment: scroll;
   }
 }
-
 
 /* Main */
 
@@ -115,7 +114,6 @@
   top: -10px;
 }
 
-
 .card-content-wrapper {
   height: 200px;
 }
@@ -128,7 +126,6 @@
 .card-content:hover {
   color: var(--text-color);
 }
-
 
 /* Media Queries */
 
@@ -191,7 +188,6 @@
   }
 }
 
-
 @media screen and (max-width: 480px) {
   .card-wrapper {
     display: block;
@@ -200,7 +196,7 @@
   }
   .card {
     margin: auto;
-    padding:1em;
+    padding: 1em;
     border-bottom: 1px solid grey;
     max-width: 98%;
   }
