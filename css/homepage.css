@@ -65,48 +65,6 @@
   }
 }
 
-@media screen and (max-width: 750px) {
-  #banner {
-    padding: 8em 0 1em 0;
-    height: auto;
-    margin-bottom: -2.75em;
-    max-height: none;
-    min-height: 0;
-    top: -2.75em;
-  }
-
-  #banner h1 {
-    font-size: 2em;
-  }
-  .banner-text {
-    display: block;
-  }
-
-  .banner-text > * {
-    margin-right: 0;
-    margin-bottom: 2em;
-  }
-
-  #banner {
-    height: auto;
-    min-height: 0;
-    max-height: none;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  #banner {
-    padding: 6em 0 2em 0;
-  }
-
-  .banner-banner-text .banner-text p br {
-    display: none;
-  }
-
-  #banner {
-    padding: 8em 0 4em 0;
-  }
-}
 
 /* Main */
 
@@ -171,9 +129,65 @@
   color: var(--text-color);
 }
 
-@media screen and (max-width: 750px) {
+
+/* Media Queries */
+
+/* Banner */
+@media screen and (max-width: 770px) {
+  #banner {
+    padding: 8em 0 1em 0;
+    height: auto;
+    margin-bottom: -2.75em;
+    max-height: none;
+    min-height: 0;
+    top: -2.75em;
+  }
+
+  #banner h1 {
+    font-size: 2em;
+  }
+  .banner-text {
+    display: block;
+  }
+
+  .banner-text > * {
+    margin-right: 0;
+    margin-bottom: 2em;
+  }
+
+  #banner {
+    height: auto;
+    min-height: 0;
+    max-height: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #banner {
+    padding: 6em 0 2em 0;
+  }
+
+  .banner-banner-text .banner-text p br {
+    display: none;
+  }
+
+  #banner {
+    padding: 8em 0 4em 0;
+  }
+}
+
+/* Card */
+@media screen and (max-width: 770px) {
   .card-wrapper {
-    max-width: 90%;
+    max-width: 95%;
+  }
+  .card {
+    margin: 0 0.6em;
+    padding: 0.1em;
+  }
+  .card-content-wrapper {
+    height: auto;
+    max-height: 200px;
   }
 }
 

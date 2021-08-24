@@ -28,14 +28,6 @@ footer {
   bottom: 0;
 }
 
-@media screen and (max-width: 480px) {
-  .all-content-wrapper {
-    padding-top: 5em;
-    max-width: 98%;
-    font-size: 1.15em;
-  }
-}
-
 #about-text {
   padding: 0 1em;
   font-size: 0.9em;
@@ -60,17 +52,6 @@ footer {
   transition: top 0.4s ease;
   min-height: 210px;
   cursor: pointer;
-}
-
-@media screen and (max-width: 480px) {
-  .column {
-    margin: 0;
-    max-width: 164px;
-    margin-top: 10px;
-  }
-  .column-text {
-    height: auto !important;
-  }
 }
 
 .column:hover {
@@ -141,4 +122,36 @@ textarea {
 #email-gpg-subheading {
   margin-left: 30px;
   color: #ebadb8;
+}
+
+
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 770px) {
+  .all-content-wrapper {
+    max-width: 90%;
+  }
+  footer {
+    padding: 1em;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .all-content-wrapper {
+    padding-top: 5em;
+    max-width: 98%;
+    font-size: 1.15em;
+  }
+  .column {
+    margin: 0;
+    max-width: 164px;
+    margin-top: 10px;
+  }
+  .column-text {
+    height: auto !important;
+  }
 }
