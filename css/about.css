@@ -129,11 +129,6 @@ textarea {
   color: #ebadb8;
 }
 
-
-
-
-
-
 /* Media Queries */
 @media screen and (max-width: 770px) {
   .all-content-wrapper {
@@ -144,7 +139,6 @@ textarea {
   }
 }
 
-
 @media screen and (max-width: 480px) {
   .all-content-wrapper {
     padding-top: 5em;
@@ -153,10 +147,24 @@ textarea {
   }
   .column {
     margin: 0;
-    max-width: 164px;
+    max-width: fit-content;
     margin-top: 10px;
   }
   .column-text {
     height: auto !important;
+    width: 170px;
+    min-height: 200px;
+    max-height: 250px;
+  }
+}
+/* Small phones */
+@media screen and (max-width: 360px) {
+  .column-text {
+    width: auto;
+    min-width: 100px;
+    max-width: 150px;
+  }
+  .column-text {
+    font-size: 0.7em;
   }
 }
