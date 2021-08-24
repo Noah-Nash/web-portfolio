@@ -38,7 +38,7 @@
 /*Typing animation*/
 .typing-wrapper {
   background-color: black;
-  width: fit-content;
+  width: 0px;
   padding-left: 20px;
 }
 
