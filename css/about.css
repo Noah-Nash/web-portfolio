@@ -22,18 +22,15 @@ h3,
 p {
   margin: 0;
 }
+h1 {
+  color: pink;
+  border-left: 0.3em solid pink;
+  padding-left: 0.6em;
+}
 
 footer {
   padding: 1.2em 10%;
   bottom: 0;
-}
-
-@media screen and (max-width: 480px) {
-  .all-content-wrapper {
-    padding-top: 5em;
-    max-width: 98%;
-    font-size: 1.15em;
-  }
 }
 
 #about-text {
@@ -60,17 +57,6 @@ footer {
   transition: top 0.4s ease;
   min-height: 210px;
   cursor: pointer;
-}
-
-@media screen and (max-width: 480px) {
-  .column {
-    margin: 0;
-    max-width: 164px;
-    margin-top: 10px;
-  }
-  .column-text {
-    height: auto !important;
-  }
 }
 
 .column:hover {
@@ -104,7 +90,7 @@ footer {
   margin-top: 120px;
 }
 
-.contact > p {
+.contact > h4 {
   color: #ec778d;
 }
 
@@ -132,4 +118,53 @@ textarea {
   border: 1px solid grey;
   border-radius: 2px;
   background-color: #76ad91;
+}
+
+#contact > h4 > a {
+  color: var(--text-color);
+}
+
+#email-gpg-subheading {
+  margin-left: 30px;
+  color: #ebadb8;
+}
+
+/* Media Queries */
+@media screen and (max-width: 770px) {
+  .all-content-wrapper {
+    max-width: 90%;
+  }
+  footer {
+    padding: 1em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .all-content-wrapper {
+    padding-top: 5em;
+    max-width: 98%;
+    font-size: 1.15em;
+  }
+  .column {
+    margin: 0;
+    max-width: fit-content;
+    margin-top: 10px;
+  }
+  .column-text {
+    height: auto !important;
+    width: 170px;
+    min-height: 200px;
+    max-height: 250px;
+  }
+}
+/* Small phones */
+@media screen and (max-width: 360px) {
+  .column-text {
+    width: auto;
+    min-width: 100px;
+    max-width: 150px;
+  }
+  .column-text {
+    font-size: 0.7em;
+  }
 }
