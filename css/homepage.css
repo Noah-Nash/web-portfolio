@@ -186,7 +186,6 @@
 }
 .card-content-wrapper {
   height: 200px;
-
 }
 .card-content {
   position: relative;
@@ -196,4 +195,13 @@
 
 .card-content:hover {
   color: var(--text-color);
+}
+
+/* Safari 11+ */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    #banner h1 {
+      color: #41ff00;
+    }
+  }
 }

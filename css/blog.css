@@ -17,11 +17,14 @@
 h1 {
   color: pink;
   border-left: 0.3em solid pink;
-  padding-left: 0.5em;
-  margin-left: 2em;
+  padding-left: 0.6em;
 }
 
 .blog-hyperlink-container {
   padding-top: 6em;
   border-bottom: none;
+}
+
+h4 {
+  color: grey;
 }
