@@ -165,8 +165,17 @@ textarea {
   .column-text {
     width: 157px;
     min-height: 135px;
+    font-size: 0.75em;
+
+  }
+}
+@media screen and (max-width: 320px) {
+  .column {
+    width: 90%
   }
   .column-text {
-    font-size: 0.75em;
+    width: 100%;
+    padding-bottom: 50px;
+    min-height: fit-content;
   }
 }
