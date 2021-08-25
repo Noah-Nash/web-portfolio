@@ -133,6 +133,11 @@
   color: var(--text-color);
 }
 
+/* Stops blue highlight */
+.card {
+  outline: none !important;
+}
+
 /* Media Queries */
 
 /* Banner */
