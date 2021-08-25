@@ -134,7 +134,7 @@
 }
 
 /* Stops blue highlight */
-.card {
+.card:focus {
   outline: none !important;
 }
 
