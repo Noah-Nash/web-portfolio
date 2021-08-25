@@ -43,8 +43,8 @@
 }
 
 .typing-animation {
+  width: 15.5ch;
   padding: 0px;
-  width: 16ch;
   animation: typing 1.3s steps(22), blink 0.7s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
