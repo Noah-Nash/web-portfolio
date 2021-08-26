@@ -228,7 +228,7 @@
   }
 }
 
-/* Disable Paralax scrolling on mobile devices*/
+/* Disable Parallax scrolling on mobile devices*/
 @media only screen and (max-device-width: 1366px) {
   #banner {
     background-attachment: scroll;
