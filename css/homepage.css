@@ -205,6 +205,9 @@
     border-bottom: 1px solid grey;
     max-width: 98%;
   }
+  .card:nth-child(3) {
+    border-bottom: none;
+  }
 
   .card > p {
     max-width: none;
@@ -218,6 +221,16 @@
     height: auto;
   }
 }
+@media screen and (max-width: 320px) {
+  #banner h1 {
+    font-size: 28px;
+  }
+  .banner-text p {
+    font-size: 11px;
+    max-width: 99%;
+  }
+}
+
 
 /* Safari 11+ */
 @media not all and (min-resolution: 0.001dpcm) {
