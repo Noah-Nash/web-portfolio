@@ -385,6 +385,12 @@ footer p {
 }
 
 @media screen and (max-width: 480px) {
+  .nav-name {
+    margin-bottom: 10px;
+  }
+  .links li {
+    padding-top: 15px;
+  }
   .icons {
     display: grid;
     grid-template-columns: 33% 33% 33%;
