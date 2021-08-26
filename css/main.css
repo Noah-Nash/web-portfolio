@@ -405,6 +405,9 @@ footer p {
 }
 /* Small phones */
 @media screen and (max-width: 360px) {
+  .links {
+    font-size: 1.35rem;
+  }
 
 }
 @media screen and (max-width: 320px) {

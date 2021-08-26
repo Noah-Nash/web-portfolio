@@ -221,6 +221,19 @@
     height: auto;
   }
 }
+@media screen and (max-width: 320px) {
+  .links {
+    font-size: 1.35rem;
+  }
+  #banner h1 {
+    font-size: 28px;
+  }
+  .banner-text p {
+    font-size: 11px;
+    max-width: 99%;
+  }
+}
+
 
 /* Safari 11+ */
 @media not all and (min-resolution: 0.001dpcm) {
