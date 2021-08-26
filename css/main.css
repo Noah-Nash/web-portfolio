@@ -20,16 +20,6 @@ ul {
   margin: auto;
 }
 
-@media screen and (max-width: 480px) {
-  html,
-  body {
-    min-width: 320px;
-  }
-  .all-content-wrapper {
-    margin: 0;
-  }
-}
-
 html {
   box-sizing: border-box;
 }
@@ -105,17 +95,6 @@ body {
   line-height: 1.65;
 }
 
-@media screen and (max-width: 1680px) {
-  body {
-    font-size: 14pt;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  body {
-    font-size: 12pt;
-  }
-}
 
 @media screen and (max-width: 350px) {
   body,
@@ -181,20 +160,6 @@ h6 {
   font-size: 0.7em;
 }
 
-@media screen and (max-width: 750px) {
-  h1 {
-    font-size: 2.1em;
-  }
-
-  h2 {
-    font-size: 1.5em;
-  }
-
-  h3 {
-    font-size: 1.35em;
-  }
-}
-
 /* Icons */
 
 .icons {
@@ -212,11 +177,6 @@ h6 {
   padding-left: 5px;
 }
 
-@media screen and (max-width: 750px) {
-  .icons a {
-    padding: 0 0.75em 0 0;
-  }
-}
 
 /* Header */
 
@@ -285,36 +245,6 @@ h6 {
   border-bottom: none;
 }
 
-/* For mobile
-.menu-icon {
-  display: none !important;
-} */
-
-/* @media screen and (max-width: 600px) {
-  .links li {
-    display: none;
-  }
-  .links .menu-icon {
-    float: right;
-    display: block !important;
-    font-size: 1em !important;
-  }
-  .nav-responsive {
-    position: relative;
-    display: block;
-  }
-  .nav-responsive a.menu-icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .nav-responsive li {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-} */
-
 @media screen and (max-width: 600px) {
   #header {
     flex-direction:column;
@@ -323,6 +253,7 @@ h6 {
     height: auto;
     border-bottom: 1px solid grey;
   }
+
   .nav-name {
     margin: 0px auto;
   }
@@ -353,9 +284,15 @@ h6 {
 }
 
 @media screen and (max-width: 1680px) {
+  body {
+    font-size: 14pt;
+  }
 }
 
 @media screen and (max-width: 1280px) {
+  body {
+    font-size: 12pt;
+  }
   #header {
     padding: 0;
   }
@@ -365,6 +302,18 @@ h6 {
 }
 
 @media screen and (max-width: 750px) {
+  h1 {
+    font-size: 2.1em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.35em;
+  }
+
   #header {
     /* height: 2.75em; */
     /* height: auto; */
@@ -383,9 +332,20 @@ h6 {
   #header nav a:last-child {
     padding-right: 1em;
   }
+  .icons a {
+    padding: 0 0.75em 0 0;
+  }
 }
 
 @media screen and (max-width: 480px) {
+  html,
+  body {
+    min-width: 320px;
+  }
+  .all-content-wrapper {
+    margin: 0;
+  }
+
   #header .nav-name {
     font-size: 0.8em;
     white-space: nowrap;
