@@ -343,7 +343,8 @@ h6 {
 @media screen and (max-width: 480px) {
   html,
   body {
-    min-width: 320px;
+    min-width: 310px;
+    max-width:100%;
   }
   .all-content-wrapper {
     margin: 0;
@@ -364,7 +365,7 @@ footer {
   padding: 1.5em 0 0 0.5em;
   background-color: var(--footer-background-color);
   color: var(--heading-color);
-  width: 100vw;
+  width: 100%;
 }
 
 footer p {
