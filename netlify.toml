@@ -2,6 +2,6 @@
   for = "/*"
   [headers.values]
     X-XSS-Protection = "1; mode=block"
-    Content-Security-Policy = "frame-ancestors 'none' ; default-src 'self' googleapis.com *.googleapis.com gstatic.com *.gstatic.com; script-src 'self' ; object-src  'none' ; style-src 'unsafe-inline' "
+    Content-Security-Policy = "frame-ancestors 'none' ; default-src 'self' googleapis.com *.googleapis.com gstatic.com *.gstatic.com; script-src 'self' ; object-src  'none' ; style-src https: 'unsafe-inline' "
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
