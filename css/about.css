@@ -64,6 +64,7 @@ footer {
 
 .column-image {
   width: 120px;
+  height: 120px;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   padding: 0.5em;
