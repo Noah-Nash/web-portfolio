@@ -245,6 +245,9 @@ h6 {
   border-bottom: none;
 }
 
+
+
+/* Media Queries */
 @media screen and (max-width: 600px) {
   #header {
     flex-direction:column;
@@ -371,4 +374,37 @@ footer p {
 .footer-social-icon {
   width: 1em;
   fill: var(--icon-color);
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 770px) {
+  footer {
+    padding: 1em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .icons {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+  }
+  .icons a {
+    margin: 0 0 1.4rem 0;
+    width: fit-content;
+    width: -moz-fit-content;
+    padding: 0px;
+  }
+  .footer-social-icon {
+    width: 1.25em;
+  }
+  footer {
+    padding: 10px 2px 2px 5px;
+  }
+}
+/* Small phones */
+@media screen and (max-width: 360px) {
+
+}
+@media screen and (max-width: 320px) {
 }
