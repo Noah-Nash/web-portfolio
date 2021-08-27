@@ -22,22 +22,14 @@ h3,
 p {
   margin: 0;
 }
-
-footer {
-  padding: 1.2em 10%;
-  bottom: 0;
-}
-
-@media screen and (max-width: 480px) {
-  .all-content-wrapper {
-    padding-top: 5em;
-    max-width: 98%;
-    font-size: 1.15em;
-  }
+h1 {
+  color: pink;
+  border-left: 0.3em solid pink;
+  padding-left: 0.6em;
 }
 
 #about-text {
-  padding: 0 1em;
+  padding: 0 .5em 0 1em;
   font-size: 0.9em;
 }
 
@@ -51,9 +43,8 @@ footer {
   background-color: var(--column-color);
   max-width: 200px;
   text-align: center;
-  flex: 25%;
   margin: 0.5em;
-  box-shadow: 0px 0px 16px -4px #a39a87;
+  box-shadow: 0px 0px 16px -4px var(--box-shadow-color);
   border-radius: 10px;
   position: relative;
   top: 0;
@@ -62,23 +53,13 @@ footer {
   cursor: pointer;
 }
 
-@media screen and (max-width: 480px) {
-  .column {
-    margin: 0;
-    max-width: 164px;
-    margin-top: 10px;
-  }
-  .column-text {
-    height: auto !important;
-  }
-}
-
 .column:hover {
   top: -10px;
 }
 
 .column-image {
   width: 120px;
+  height: 120px;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   padding: 0.5em;
@@ -104,7 +85,7 @@ footer {
   margin-top: 120px;
 }
 
-.contact > p {
+.contact > h4 {
   color: #ec778d;
 }
 
@@ -132,4 +113,63 @@ textarea {
   border: 1px solid grey;
   border-radius: 2px;
   background-color: #76ad91;
+}
+
+#contact > h4 > a {
+  color: var(--text-color);
+}
+
+#email-gpg-subheading {
+  margin-left: 30px;
+  color: #ebadb8;
+}
+
+/* Media Queries */
+@media screen and (max-width: 770px) {
+  .all-content-wrapper {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .all-content-wrapper {
+    padding-top: 5em;
+    max-width: 98%;
+    font-size: 1.15em;
+  }
+  .column-wrapper {
+    margin: -10px;
+  }
+  .column {
+    margin: 0;
+    max-width: fit-content;
+    margin-top: 10px;
+    font-size: 0.85em;
+  }
+  .column-text {
+    height: auto !important;
+    width: 167px;
+    min-height: 170px;
+    max-height: 250px;
+  }
+}
+/* Small phones */
+@media screen and (max-width: 360px) {
+  .column-text {
+    width: 157px;
+    min-height: 135px;
+    font-size: 0.8em;
+
+  }
+}
+@media screen and (max-width: 320px) {
+  .column {
+    width: 95%
+  }
+  .column-text {
+    width: initial;
+    padding-bottom: 50px;
+    min-height: fit-content;
+    font-size: 1rem;
+  }
 }

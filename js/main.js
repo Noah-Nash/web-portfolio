@@ -1,12 +1,5 @@
-function menuFunction() {
-  var x = document.getElementById("menu");
-  if (x.className === "nav") {
-    x.className += "-responsive";
-  } else {
-    x.className = "nav";
-  }
-}
 
+//Dark Theme Toggle
 var toggle = document.getElementById("theme-toggle");
 
 var storedTheme =
