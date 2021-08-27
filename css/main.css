@@ -265,8 +265,7 @@ h6 {
     font-size: 1.2em;
   }
   .links {
-    padding: .5em;
-    margin-bottom: 1em;
+    margin-bottom: .5rem;
   }
   .button-theme-icon {
     height: 29px;
@@ -317,8 +316,6 @@ h6 {
   }
 
   #header {
-    /* height: 2.75em; */
-    /* height: auto; */
     line-height: 2.75em;
     padding: 0;
   }
@@ -382,15 +379,16 @@ footer p {
   footer {
     padding: 1em;
   }
+  .links > li {
+    padding: .8rem 0px;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .nav-name {
     margin-bottom: 10px;
   }
-  .links li {
-    padding-top: 15px;
-  }
+
   .icons {
     display: grid;
     grid-template-columns: 33% 33% 33%;
