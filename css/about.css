@@ -117,6 +117,7 @@ textarea {
 
 #contact > h4 > a {
   color: var(--text-color);
+  font-weight: normal;
 }
 
 #email-gpg-subheading {
